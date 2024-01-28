@@ -2,9 +2,7 @@ name: Publish
 
 on:
   # 当master分支有push时，触发action
-  push:
-    tags:
-      - 'v*'#
+  [push]
 
 jobs:
   publish:
