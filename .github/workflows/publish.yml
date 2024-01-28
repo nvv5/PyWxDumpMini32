@@ -47,12 +47,10 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.II }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref.tag }}
           body: |
-            [Auto Release] Update PyWxDump to ${{ github.ref }}
+            [Auto Release] Update PyWxDump to 1
           draft: false
           prerelease: false
           files: |
